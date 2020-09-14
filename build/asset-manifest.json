@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/http%7Bluisloustaunau%7D.github.io/%7Bverbose-sniffle%7D/static/css/main.b9b0c390.chunk.css",
-    "main.js": "/http%7Bluisloustaunau%7D.github.io/%7Bverbose-sniffle%7D/static/js/main.97bbc054.chunk.js",
-    "main.js.map": "/http%7Bluisloustaunau%7D.github.io/%7Bverbose-sniffle%7D/static/js/main.97bbc054.chunk.js.map",
-    "runtime-main.js": "/http%7Bluisloustaunau%7D.github.io/%7Bverbose-sniffle%7D/static/js/runtime-main.e7bd5598.js",
-    "runtime-main.js.map": "/http%7Bluisloustaunau%7D.github.io/%7Bverbose-sniffle%7D/static/js/runtime-main.e7bd5598.js.map",
-    "static/js/2.c34abb06.chunk.js": "/http%7Bluisloustaunau%7D.github.io/%7Bverbose-sniffle%7D/static/js/2.c34abb06.chunk.js",
-    "static/js/2.c34abb06.chunk.js.map": "/http%7Bluisloustaunau%7D.github.io/%7Bverbose-sniffle%7D/static/js/2.c34abb06.chunk.js.map",
-    "index.html": "/http%7Bluisloustaunau%7D.github.io/%7Bverbose-sniffle%7D/index.html",
-    "precache-manifest.08d5ecd386ca4d4cfdcc3f579dc9553c.js": "/http%7Bluisloustaunau%7D.github.io/%7Bverbose-sniffle%7D/precache-manifest.08d5ecd386ca4d4cfdcc3f579dc9553c.js",
-    "service-worker.js": "/http%7Bluisloustaunau%7D.github.io/%7Bverbose-sniffle%7D/service-worker.js",
-    "static/css/main.b9b0c390.chunk.css.map": "/http%7Bluisloustaunau%7D.github.io/%7Bverbose-sniffle%7D/static/css/main.b9b0c390.chunk.css.map",
-    "static/js/2.c34abb06.chunk.js.LICENSE.txt": "/http%7Bluisloustaunau%7D.github.io/%7Bverbose-sniffle%7D/static/js/2.c34abb06.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/http%7Bluisloustaunau%7D.github.io/%7Bverbose-sniffle%7D/static/media/856f31d9f475501c7552c97dbe727319.4a733314.jpg",
-    "static/media/normal.jpg": "/http%7Bluisloustaunau%7D.github.io/%7Bverbose-sniffle%7D/static/media/normal.988a9b98.jpg",
-    "static/media/obesity second degree.jpg": "/http%7Bluisloustaunau%7D.github.io/%7Bverbose-sniffle%7D/static/media/obesity second degree.e50cd09c.jpg",
-    "static/media/obesity third degree.jpg": "/http%7Bluisloustaunau%7D.github.io/%7Bverbose-sniffle%7D/static/media/obesity third degree.6c98c69a.jpg",
-    "static/media/obesity.jpg": "/http%7Bluisloustaunau%7D.github.io/%7Bverbose-sniffle%7D/static/media/obesity.552ccc56.jpg",
-    "static/media/overweight.jpg": "/http%7Bluisloustaunau%7D.github.io/%7Bverbose-sniffle%7D/static/media/overweight.48f7cfef.jpg",
-    "static/media/underweight.jpg": "/http%7Bluisloustaunau%7D.github.io/%7Bverbose-sniffle%7D/static/media/underweight.ee976b7f.jpg"
+    "main.css": "/literate-winner/static/css/main.afbaac2e.chunk.css",
+    "main.js": "/literate-winner/static/js/main.381c575c.chunk.js",
+    "main.js.map": "/literate-winner/static/js/main.381c575c.chunk.js.map",
+    "runtime-main.js": "/literate-winner/static/js/runtime-main.1b7d1d8d.js",
+    "runtime-main.js.map": "/literate-winner/static/js/runtime-main.1b7d1d8d.js.map",
+    "static/js/2.c34abb06.chunk.js": "/literate-winner/static/js/2.c34abb06.chunk.js",
+    "static/js/2.c34abb06.chunk.js.map": "/literate-winner/static/js/2.c34abb06.chunk.js.map",
+    "index.html": "/literate-winner/index.html",
+    "precache-manifest.e603fd56864af6fee02cbb95fea7f396.js": "/literate-winner/precache-manifest.e603fd56864af6fee02cbb95fea7f396.js",
+    "service-worker.js": "/literate-winner/service-worker.js",
+    "static/css/main.afbaac2e.chunk.css.map": "/literate-winner/static/css/main.afbaac2e.chunk.css.map",
+    "static/js/2.c34abb06.chunk.js.LICENSE.txt": "/literate-winner/static/js/2.c34abb06.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/literate-winner/static/media/856f31d9f475501c7552c97dbe727319.4a733314.jpg",
+    "static/media/normal.jpg": "/literate-winner/static/media/normal.988a9b98.jpg",
+    "static/media/obesity second degree.jpg": "/literate-winner/static/media/obesity second degree.e50cd09c.jpg",
+    "static/media/obesity third degree.jpg": "/literate-winner/static/media/obesity third degree.6c98c69a.jpg",
+    "static/media/obesity.jpg": "/literate-winner/static/media/obesity.552ccc56.jpg",
+    "static/media/overweight.jpg": "/literate-winner/static/media/overweight.48f7cfef.jpg",
+    "static/media/underweight.jpg": "/literate-winner/static/media/underweight.ee976b7f.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.e7bd5598.js",
+    "static/js/runtime-main.1b7d1d8d.js",
     "static/js/2.c34abb06.chunk.js",
-    "static/css/main.b9b0c390.chunk.css",
-    "static/js/main.97bbc054.chunk.js"
+    "static/css/main.afbaac2e.chunk.css",
+    "static/js/main.381c575c.chunk.js"
   ]
 }
