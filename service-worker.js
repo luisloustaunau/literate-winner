@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/http%7Bluisloustaunau%7D.github.io/%7Bverbose-sniffle%7D/precache-manifest.08d5ecd386ca4d4cfdcc3f579dc9553c.js"
+  "/literate-winner/precache-manifest.e603fd56864af6fee02cbb95fea7f396.js"
 );
 
 self.addEventListener('message', (event) => {
@@ -33,7 +33,7 @@ workbox.core.clientsClaim();
 self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute(workbox.precaching.getCacheKeyForURL("/http%7Bluisloustaunau%7D.github.io/%7Bverbose-sniffle%7D/index.html"), {
+workbox.routing.registerNavigationRoute(workbox.precaching.getCacheKeyForURL("/literate-winner/index.html"), {
   
   blacklist: [/^\/_/,/\/[^/?]+\.[^/]+$/],
 });
