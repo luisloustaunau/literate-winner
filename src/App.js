@@ -177,9 +177,9 @@ class App extends React.Component{
           <br></br>
           <button  className="button" type="submit"   >Submit</button>
         </form>
-        <form id="standard" onInput = { ()=> this.handleSubmitStan()}>
+        <form id="standard" onSubmit = {this.handleSubmitStan} >
         <h3>Standard units</h3>
-          <label for="height">height</label>
+          <label for="height" >height</label>
            <br />
           <label for="height">(ft)</label>
           <label id="inch" for="cm">(in)</label>
@@ -195,7 +195,7 @@ class App extends React.Component{
           <br></br>
           <label for="subimssion">See results!</label>
           <br></br>
-          <button  className="button" type="submit">Submit</button>
+          <button  className="button" type="submit"  >Submit</button>
         </form>
       </section> ) }
       { showResults && (
