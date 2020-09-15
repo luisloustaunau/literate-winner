@@ -39,6 +39,8 @@ h2 {
   padding-top: 70px;
   padding-bottom: 0px;
   border-radius: 10px;
+  position: relative;
+  right: 10px;
 }
 .data form h2 {
   text-align: center;
