@@ -162,7 +162,7 @@ class App extends React.Component{
       )}
       {showForm && (
       <section className= "data">
-        <form id="metric" onSubmit = {this.handleSubmit} >
+        <form id="metric" >
         <h2>Metric units</h2>
           <label for="height"> height (cm)</label>
           <br></br>
@@ -177,9 +177,9 @@ class App extends React.Component{
           <br></br>
           <label for="subimssion">See results!</label>
           <br></br>
-          <button  className="button" type="submit"   >Submit</button>
+          <button  className="button" type="submit" onClick = {this.handleSubmit}   >Submit</button>
         </form>
-        <form id="standard" onSubmit = {this.handleSubmitStan} >
+        <form id="standard"  >
         <h3>Standard units</h3>
           <label for="height" >height</label>
            <br />
@@ -197,7 +197,7 @@ class App extends React.Component{
           <br></br>
           <label for="subimssion">See results!</label>
           <br></br>
-          <button  className="button" type="submit"  >Submit</button>
+          <button  className="button" type="submit" onClick = {this.handleSubmitStan}  >Submit</button>
         </form>
       </section> ) }
       { showResults && (
