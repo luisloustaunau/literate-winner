@@ -143,19 +143,30 @@ h2 {
   width: 200px;
 }
 @media only screen and (min-width: 250px) and (max-width:480px), (orientation: portrait) {
+  
   .h1,h2 {
+    position: relative;
+    left: 65px;
     width:380px;
     
   }
   .data {
     width: 420px;
+   position: relative;
+   left: 30px;
   }
   .data form h3,.data form h2 {
     font-size: 25px;
     position: relative;
-    right: 22px;
+    right: 20px;
     
   }
+
+  .data form h2 {
+    position: relative;
+    left: 0px;
+  }
+
   #standard {
     position: relative;
     left: 20px;   
@@ -164,11 +175,32 @@ h2 {
     position: relative;
     right: 20px;
   }
+
   .resultsImg img{
-    height: 175px;
+    height: 125px;
     border-radius: 20px;
   }
+  .weight {
+    position: relative;
+    left:20px
+  }
+  .results p {
+    width: 350px;
+    margin: 0 auto;
+    position: relative;
+    left: 20px;
+  }
+  .results button {
+    font-size: 30px;
+    margin: 30px;
+    height: 75px;
+    width: 150px;
+    text-align: center;
+    position: relative;
+    left: 100px;
+    
 
+  }
     
   
 }
