@@ -177,7 +177,7 @@ class App extends React.Component{
           <br></br>
           <label for="subimssion">See results!</label>
           <br></br>
-          <button  className="button" type="submit" onClick = {this.handleSubmit}   >Submit</button>
+          <button  className="button" type="submit" onClick = {this.handleSubmit}  >Submit</button>
         </form>
         <form id="standard"  >
         <h3>Standard units</h3>
