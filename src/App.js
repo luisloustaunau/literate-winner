@@ -160,7 +160,7 @@ class App extends React.Component{
       )}
       {showForm && (
       <section className= "data">
-        <form id="metric" onSubmit = { ()=> this.handleSubmit()} >
+        <form id="metric" onSubmit = {this.handleSubmit} >
         <h2>Metric units</h2>
           <label for="height"> height (cm)</label>
           <br></br>
@@ -256,7 +256,7 @@ class App extends React.Component{
       )}
 
        <form>
-       <button className="button" onClick ={()=> this.handleReturn()} >Return</button>
+       <button className="button" onClick ={this.handleReturn} >Return</button>
        </form>
  
       </section>
