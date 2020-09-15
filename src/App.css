@@ -32,35 +32,78 @@ h2 {
   background-color:  #dd5c5c;
   font-size: 30px;
   font-weight: 500; 
-  width: 800px;
-  height: 420px;
+  width: 850px;
+  height: 450px;
   margin: 0 auto;
   padding-top: 70px;
   padding-bottom: 0px;
   border-radius: 10px;
 }
+.data form h2 {
+  text-align: center;
+  width: 250px;
+  font-size: 30px;
+  position: relative;
+  bottom: 50px;
+  right: 19px;
+  color: black;
+  font-family:  Arial, Helvetica, sans-serif;
+  margin: 0 auto;
+}
+.data form h3 {
+  text-align: center;
+  position: relative;
+  right: 12px;
+  width: 250px;
+  font-size: 30px;
+  color: black;
+  font-family:  Arial, Helvetica, sans-serif;
+}
+
 .data form {
   display: inline-block;
   height: 170px;
   width: 200px;
+  position: relative;
+  bottom: 45px;
+  margin: 0 auto;
+}
+.data #metric {
+  position: relative;
+  bottom: 50px;
 }
 .data form input {
   height: 25px;
-  width: 100px;
+  width: 50px;
+  padding-left: 10px;
 } 
+.data #standard label {
+   margin:10px;
+}
+
+.data #standard input {
+  margin: 10px;
+}
+.data #standard #inch {
+  position: relative;
+  left: 10px;
+  margin-left: 20px;
+}
 .button {
-  width: 8.11rem;
-  padding: .77rem;
+  width: 115px;
+  padding: 20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
 }
 #standard {
    position: relative;
-   left: 60px; 
+   left: 50px; 
    
 }
 #metric {
   position: relative;
-  right: 60px;
+  bottom: 100px;
+  right: 50px;
   
 }
 #bodymass {
@@ -95,4 +138,34 @@ h2 {
   margin: 30px;
   height: 75px;
   width: 200px;
+}
+@media only screen and (min-width: 250px) and (max-width:480px), (orientation: portrait) {
+  .h1,h2 {
+    width:380px;
+    
+  }
+  .data {
+    width: 420px;
+  }
+  .data form h3,.data form h2 {
+    font-size: 25px;
+    position: relative;
+    right: 22px;
+    
+  }
+  #standard {
+    position: relative;
+    left: 20px;   
+  }
+    #metric {
+    position: relative;
+    right: 20px;
+  }
+  .resultsImg img{
+    height: 175px;
+    border-radius: 20px;
+  }
+
+    
+  
 }

@@ -25,6 +25,7 @@ class App extends React.Component{
        height: '',
        weightStandard: '',
        heightStandard: '',
+       heightStandardIn: '',
        bodyMass: '',
        showForm: true,
        showResults: false,
@@ -37,6 +38,7 @@ class App extends React.Component{
 
     this.handleWeightChangeStan = this.handleWeightChangeStan.bind(this);
     this.handleHeightChangeStan = this.handleHeightChangeStan.bind(this);
+    this.handleHeightChangeStanIn = this.handleHeightChangeStanIn.bind(this);
     this.handleSubmitStan = this.handleSubmitStan.bind(this);
   }
   
@@ -51,6 +53,9 @@ class App extends React.Component{
   handleHeightChangeStan(event){
     this.setState({heightStandard: event.target.value});
   }
+  handleHeightChangeStanIn(event) {
+    this.setState({heightStandardIn: event.target.value})
+  }
   handleWeightChangeStan(event){
     this.setState({weightStandard: event.target.value});
   }
@@ -62,7 +67,9 @@ class App extends React.Component{
         showForm: false,
         showInformation: false
     })
-    let resultStan = ((this.state.weightStandard*703)/((this.state.heightStandard*12)**2)).toFixed(2);
+    let upper = this.state.weightStandard*703
+    let lower = (Number(this.state.heightStandardIn)+(Number(this.state.heightStandard))*12)**2;
+    let resultStan = (upper/lower).toFixed(1);
     this.setState({bodyMass: resultStan});
 
     if (resultStan > 40) {
@@ -87,7 +94,7 @@ class App extends React.Component{
          showForm: false,
          showInformation: false
     })
-    let result = (this.state.weight/(this.state.height^2)).toFixed(2);
+    let result = (this.state.weight/(((Number(this.state.height)/100))**2)).toFixed(1);
     this.setState({bodyMass: result});
 
     if (result > 40) {
@@ -154,12 +161,14 @@ class App extends React.Component{
       {showForm && (
       <section className= "data">
         <form id="metric" onSubmit = { ()=> this.handleSubmit()} >
-          <label for="height">Enter your height (m)</label>
+        <h2>Metric units</h2>
+          <label for="height"> height (cm)</label>
           <br></br>
           <input id="height" name="height" type="text" pattern="^-?[0-9]\d*\.?\d*$"  required  value = {this.state.value}  onChange={this.handleHeightChange} />
           <br></br>
           <br></br>
-          <label for="weight">Enter your weight (kg)</label>
+          <br></br>
+          <label for="weight"> weight (kg)</label>
           <br></br>
           <input id="weight" name="weight" type="text" pattern="^-?[0-9]\d*\.?\d*$"  required value = {this.state.value} onChange={this.handleWeightChange}   />
           <br></br>
@@ -168,13 +177,18 @@ class App extends React.Component{
           <br></br>
           <button  className="button" type="submit"   >Submit</button>
         </form>
-        <form id="standard" onSubmit = { ()=> this.handleSubmitStan()}>
-          <label for="height">Enter your height (ft)</label>
+        <form id="standard" onInput = { ()=> this.handleSubmitStan()}>
+        <h3>Standard units</h3>
+          <label for="height">height</label>
+           <br />
+          <label for="height">(ft)</label>
+          <label id="inch" for="cm">(in)</label>
           <br></br>
           <input id="height" name="height" type="text" pattern="^-?[0-9]\d*\.?\d*$"   value = {this.state.value} onChange={this.handleHeightChangeStan}  required />
+          <input id= "cm" name="cm" type="text" pattern ="^-?[0-9]\d*\.?\d*$" value = {this.state.value} onChange={this.handleHeightChangeStanIn} required />
           <br></br>
           <br></br>
-          <label for="weight">Enter your weight (lbs)</label>
+          <label for="weight"> weight (lbs)</label>
           <br></br>
           <input id="weight" name="weight" type="text" pattern="^-?[0-9]\d*\.?\d*$"  value ={this.state.value} onChange={this.handleWeightChangeStan} required/>
           <br></br>
@@ -203,7 +217,7 @@ class App extends React.Component{
        { normal && (
       <section className="weight">
         <div className ="resultsImg">
-          <p> Normal weight</p>
+          <p> Normal weight</p> 
           <img src={normalImg} />
         </div>
       </section>
