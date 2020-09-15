@@ -62,11 +62,7 @@ class App extends React.Component{
 
 
   handleSubmitStan(event) {
-    this.setState({
-        showResults: true,
-        showForm: false,
-        showInformation: false
-    })
+   
     let upper = this.state.weightStandard*703
     let lower = (Number(this.state.heightStandardIn)+(Number(this.state.heightStandard))*12)**2;
     let resultStan = (upper/lower).toFixed(1);
@@ -85,15 +81,16 @@ class App extends React.Component{
     } else {
      this.setState({underWeight: true})
     }
+    this.setState({
+      showResults: true,
+      showForm: false,
+      showInformation: false
+ })
   }
 
 
   handleSubmit(event) {
-    this.setState({
-         showResults: true,
-         showForm: false,
-         showInformation: false
-    })
+
     let result = (this.state.weight/(((Number(this.state.height)/100))**2)).toFixed(1);
     this.setState({bodyMass: result});
 
@@ -110,6 +107,11 @@ class App extends React.Component{
     } else {
       this.setState({underWeight: true})
     }
+    this.setState({
+      showResults: true,
+      showForm: false,
+      showInformation: false
+ })
   }
 
   handleReturn(event) {
