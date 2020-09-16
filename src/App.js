@@ -13,7 +13,6 @@ import './App.css'
 class App extends React.Component{
   constructor(props) {
   super(props)
-
     this.state = {
        underWeight: false,
        normal: false,
@@ -62,7 +61,11 @@ class App extends React.Component{
 
 
   handleSubmitStan(event) {
-   
+    
+    if(!this.state.heightStandardIn || !this.state.heightStandard || !this.state.weight) {
+      return;
+    }
+
     let upper = this.state.weightStandard*703
     let lower = (Number(this.state.heightStandardIn)+(Number(this.state.heightStandard))*12)**2;
     let resultStan = (upper/lower).toFixed(1);
@@ -90,6 +93,11 @@ class App extends React.Component{
 
 
   handleSubmit(event) {
+
+    
+    if(!this.state.height || !this.state.weight) {
+      return;
+    }
 
     let result = (this.state.weight/(((Number(this.state.height)/100))**2)).toFixed(1);
     this.setState({bodyMass: result});
